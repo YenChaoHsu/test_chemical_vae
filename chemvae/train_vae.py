@@ -15,6 +15,7 @@ import argparse
 import numpy as np
 #import tensorflow as tf
 import tensorflow.compat.v1 as tf
+print(tf.__version__)'
 tf.disable_v2_behavior()
 config = tf.ConfigProto()
 #config = tf.compat.v1.ConfigProto()
