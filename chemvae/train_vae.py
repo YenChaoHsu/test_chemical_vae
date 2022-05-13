@@ -13,12 +13,11 @@ encoder and decoder portions of the network
 
 import argparse
 import numpy as np
-#import tensorflow as tf
-import tensorflow.compat.v1 as tf
+import tensorflow as tf
+#import tensorflow.compat.v1 as tf
 print(tf.__version__)
-tf.disable_v2_behavior()
-config = tf.ConfigProto()
-#config = tf.compat.v1.ConfigProto()
+#config = tf.ConfigProto()
+config = tf.compat.v1.ConfigProto()
 config.gpu_options.per_process_gpu_memory_fraction = 0.5
 config.gpu_options.allow_growth = True
 import yaml
